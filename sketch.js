@@ -61,22 +61,12 @@ function draw() {
         playerArrows[i].body
       );
 
-      /*if (board1Collision || board2Collision) {
-        score += 5;
-      }*/
-
-      /*if (board1Collision.collided && board2Collision.collided) {
-        score += 5;
-      }*/
-
-      if (board1Collision.collided || board2Collision.collided) {
+     
+      if (board1Collision.collided && board2Collision.collided) {
         score += 5;
       }
 
-      /*if (board1Collision.collided || board2Collision.collided) {
-        score = 5;
-      }*/
-
+    
       
       var posX = playerArrows[i].body.position.x;
       var posY = playerArrows[i].body.position.y;
@@ -109,21 +99,12 @@ function draw() {
   textSize(30);
   text("Remaining Arrows : " + numberOfArrows, 200, 100);
 
-  /*if (numberOfArrows == 5) {
-    gameOver();
-  }*/
-
-  /*if (numberOfArrows == 0) {
-    gameOver();
-  }*/
-
-  if (numberOfArrows = 0) {
+  
+  if (numberOfArrows == 0) {
     gameOver();
   }
 
-  /*if (numberOfArrows == 0) {
-    gameOver;
-  }*/
+  
 
 }
 
